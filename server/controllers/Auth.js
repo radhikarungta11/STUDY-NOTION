@@ -22,7 +22,7 @@ exports.signup = async (req, res) => {
       accountType,
       contactNumber,
       otp,
-    } = req.body
+    } = req.body;
     // Check if All Details are there or not
     if (
       !firstName ||
@@ -35,7 +35,7 @@ exports.signup = async (req, res) => {
       return res.status(403).send({
         success: false,
         message: "All Fields are required",
-      })
+      });
     }
     // Check if password and confirm password match
     if (password !== confirmPassword) {
@@ -43,7 +43,7 @@ exports.signup = async (req, res) => {
         success: false,
         message:
           "Password and Confirm Password do not match. Please try again.",
-      })
+      });
     }
 
     // Check if user already exists
@@ -52,7 +52,7 @@ exports.signup = async (req, res) => {
       return res.status(400).json({
         success: false,
         message: "User already exists. Please sign in to continue.",
-      })
+      });
     }
 
     // Find the most recent OTP for the email
@@ -63,21 +63,21 @@ exports.signup = async (req, res) => {
       return res.status(400).json({
         success: false,
         message: "The OTP is not valid",
-      })
+      });
     } else if (otp !== response[0].otp) {
       // Invalid OTP
       return res.status(400).json({
         success: false,
         message: "The OTP is not valid",
-      })
+      });
     }
 
     // Hash the password
     const hashedPassword = await bcrypt.hash(password, 10)
 
     // Create the user
-    let approved = ""
-    approved === "Instructor" ? (approved = false) : (approved = true)
+    let approved = "";
+    approved === "Instructor" ? (approved = false) : (approved = true);
 
     // Create the Additional Profile For User
     const profileDetails = await Profile.create({
@@ -85,7 +85,7 @@ exports.signup = async (req, res) => {
       dateOfBirth: null,
       about: null,
       contactNumber: null,
-    })
+    });
     const user = await User.create({
       firstName,
       lastName,
@@ -95,22 +95,22 @@ exports.signup = async (req, res) => {
       accountType: accountType,
       approved: approved,
       additionalDetails: profileDetails._id,
-      image: "",
-    })
+      image:  `https://api.dicebear.com/6.x/initials/svg?seed=${firstName} ${lastName}&backgroundColor=00897b,00acc1,039be5,1e88e5,3949ab,43a047,5e35b1,7cb342,8e24aa,c0ca33,d81b60,e53935,f4511e,fb8c00,fdd835,ffb300,ffd5dc,ffdfbf,c0aede,d1d4f9,b6e3f4&backgroundType=solid,gradientLinear&backgroundRotation=0,360,-350,-340,-330,-320&fontFamily=Arial&fontWeight=600`,
+    });
 
     return res.status(200).json({
       success: true,
       user,
       message: "User registered successfully",
-    })
+    });
   } catch (error) {
     console.error(error)
     return res.status(500).json({
       success: false,
       message: "User cannot be registered. Please try again.",
-    })
+    });
   }
-}
+};
 
 // Login controller for authenticating users
 exports.login = async (req, res) => {
