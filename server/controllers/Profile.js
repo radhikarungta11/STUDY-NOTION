@@ -95,11 +95,11 @@ exports.deleteAccount = async (req, res) => {
 
 exports.getAllUserDetails = async (req, res) => {
   try {
-    const id = req.user.id
+    const id = req.user.id;
     const userDetails = await User.findById(id)
       .populate("additionalDetails")
-      .exec()
-    console.log(userDetails)
+      .exec();
+    console.log(userDetails);
     res.status(200).json({
       success: true,
       message: "User Data fetched successfully",
