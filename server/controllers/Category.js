@@ -1,4 +1,4 @@
-const { Mongoose } = require("mongoose");
+// const { Mongoose } = require("mongoose");
 const Category = require("../models/Category");
 const Course = require("../models/Course");
 function getRandomInt(max) {
