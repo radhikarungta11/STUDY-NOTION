@@ -12,7 +12,7 @@ const Button = ({ children, active, linkto }) => {
         {children}
       </div>
     </Link>
-  );
+  ); 
 };
 
 export default Button;
