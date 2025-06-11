@@ -5,6 +5,7 @@ StudyNotion is a fully functional ed-tech platform that enables users to create,
 ![273155333-552f6183-d889-46c2-b55d-de10822205e6](https://github.com/user-attachments/assets/db42fd09-04ac-4f6f-b6c4-1ccc929d725c)
 
 Project Description
+
 StudyNotion aims to provide:
 
 A seamless and interactive learning experience for students, making education more accessible and engaging.
