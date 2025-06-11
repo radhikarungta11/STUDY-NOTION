@@ -55,7 +55,8 @@ User Edit Details: This page will allow the student to edit their account detail
 
 # For Instructors:
 
-Dashboard: This page will have an overview of the instructor's courses, as well as the ratings and feedback for each course.
+` - Dashboard: This page will have an overview of the instructor's courses, as well as the ratings and feedback for each course.
+
 Insights: This page will have detailed insights into the instructor's courses, including the number of views, clicks, and other relevant metrics.
 Course Management Pages: These pages will allow the instructor to create, update, and delete courses, as well as manage the course content and pricing.
 View and Edit Profile Details: These pages will allow the instructor to view and edit their account details. For Admin (this is for future scope):
