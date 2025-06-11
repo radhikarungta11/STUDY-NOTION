@@ -58,7 +58,6 @@ The front end of StudyNotion has all the necessary pages that an ed-tech platfor
 # For Instructors:
 
 - Dashboard: This page will have an overview of the instructor's courses, as well as the ratings and feedback for each course.
-
 - Insights: This page will have detailed insights into the instructor's courses, including the number of views, clicks, and other relevant metrics.
 - Course Management Pages: These pages will allow the instructor to create, update, and delete courses, as well as manage the course content and pricing.
 - View and Edit Profile Details: These pages will allow the instructor to view and edit their account details. For Admin (this is for future scope):
@@ -80,20 +79,23 @@ MongoDB is a popular NoSQL database that allows for flexible data storage and re
 
 Features and Functionalities of the Back-end: The back end of StudyNotion provides a range of features and functionalities, including:
 
-User authentication and authorization: Students and instructors can sign up and log in to the platform using their email addresses and password. The platform also supports OTP (One-Time Password) verification and forgot password functionality for added security.
-Course management: Instructors can create, read, update, and delete courses, as well as manage course content and media. Students can view and rate courses.
-Payment Integration: Students will purchase and enrol on courses by completing the checkout flow that is followed by Razorpay integration for payment handling.
-Cloud-based media management: StudyNotion uses Cloudinary, a cloud-based media management service, to store and manage all media content, including images, videos, and documents.
-Markdown formatting: Course content in document format is stored in Markdown format, which allows for easier display and rendering on the front end. Frameworks, Libraries, and Tools used: The back end of StudyNotion uses a range of frameworks, libraries, and tools to ensure its functionality and performance, including:
-Node.js: Node.js is used as the primary framework for the back end.
-MongoDB: MongoDB is used as the primary database, providing a flexible and scalable data storage solution.
-Express.js: Express.js is used as a web application framework, providing a range of features and tools for building web applications.
-JWT: JWT (JSON Web Tokens) are used for authentication and authorization, providing a secure and reliable way to manage user credentials.
-Bcrypt: Bcrypt is used for password hashing, adding an extra layer of security to user data.
-Mongoose: Mongoose is used as an Object Data Modeling (ODM) library, providing a way to interact with MongoDB using JavaScript. Data Models and Database Schema: The back end of StudyNotion uses a range of data models and database schemas to manage data, including:
-Student schema: Includes fields such as name, email, password, and course details for each student.
-Instructor schema: Includes fields such as name, email, password, and course details for each instructor.
-Course schema: Includes fields such as course name, description, instructor details, and media content.
+1. User authentication and authorization: Students and instructors can sign up and log in to the platform using their email addresses and password. The platform also supports OTP (One-Time Password) verification and forgot password functionality for added security.
+2. Course management: Instructors can create, read, update, and delete courses, as well as manage course content and media. Students can view and rate courses.
+3. Payment Integration: Students will purchase and enrol on courses by completing the checkout flow that is followed by Razorpay integration for payment handling.
+4. Cloud-based media management: StudyNotion uses Cloudinary, a cloud-based media management service, to store and manage all media content, including images, videos, and documents.
+5. Markdown formatting: Course content in document format is stored in Markdown format, which allows for easier display and rendering on the front end. Frameworks, Libraries, and Tools used:  The back end of StudyNotion uses a range of frameworks, libraries, and tools to ensure its functionality and performance, including:
+   
+- Node.js: Node.js is used as the primary framework for the back end.
+- MongoDB: MongoDB is used as the primary database, providing a flexible and scalable data storage solution.
+- Express.js: Express.js is used as a web application framework, providing a range of features and tools for building web applications.
+- JWT: JWT (JSON Web Tokens) are used for authentication and authorization, providing a secure and reliable way to manage user credentials.
+- Bcrypt: Bcrypt is used for password hashing, adding an extra layer of security to user data.
+- Mongoose: Mongoose is used as an Object Data Modeling (ODM) library, providing a way to interact with MongoDB using JavaScript. Data Models and Database Schema: The back end of StudyNotion uses a range of data models and database schemas to manage data, including:
+  
+1. Student schema: Includes fields such as name, email, password, and course details for each student.
+2. Instructor schema: Includes fields such as name, email, password, and course details for each instructor.
+3. Course schema: Includes fields such as course name, description, instructor details, and media content.
+   
 Overall, the back-end of StudyNotion is designed to provide a robust and scalable solution for an ed-tech platform, with a focus on security, reliability, and ease of use. By using the right frameworks, libraries, and tools, we can ensure that the platform functions smoothly and provides an optimal user experience for all its users.
 
 ![273154818-3e061630-da02-4d36-a3b4-c85c51ea306e](https://github.com/user-attachments/assets/88eb5596-b2ea-49a2-9325-d80495ca4372)
@@ -105,29 +107,34 @@ Overall, the back-end of StudyNotion is designed to provide a robust and scalabl
 The StudyNotion platform's API is designed following the REST architectural style. The API is implemented using Node.js and Express.js. It uses JSON for data exchange and follows standard HTTP request methods such as GET, POST, PUT, and DELETE.
 
 Sample list of API endpoints and their functionalities:
-/api/auth/signup (POST) - Create a new user (student or instructor) account.
-/api/auth/login (POST) – Log in using existing credentials and generate a JWT token.
-/api/auth/verify-otp (POST) - Verify the OTP sent to the user's registered email.
-/api/auth/forgot-password (POST) - Send an email with a password reset link to the registered email.
-/api/courses (GET) - Get a list of all available courses.
-/api/courses/:id (GET) - Get details of a specific course by ID.
-/api/courses (POST) - Create a new course.
-/api/courses/:id (PUT) - Update an existing course by ID.
-/api/courses/:id (DELETE) - Delete a course by ID.
-/api/courses/:id/rate (POST) - Add a rating (out of 5) to a course.
-Sample API requests and responses:
-GET /api/courses: Get all courses ● Response: A list of all courses in the database
 
-GET /api/courses/:id: Get a single course by ID ● Response: The course with the specified ID
+1. /api/auth/signup (POST) - Create a new user (student or instructor) account.
+2. /api/auth/login (POST) – Log in using existing credentials and generate a JWT token.
+3. /api/auth/verify-otp (POST) - Verify the OTP sent to the user's registered email.
+4. /api/auth/forgot-password (POST) - Send an email with a password reset link to the registered email.
+5. /api/courses (GET) - Get a list of all available courses.
+6. /api/courses/:id (GET) - Get details of a specific course by ID.
+7. /api/courses (POST) - Create a new course.
+8. /api/courses/:id (PUT) - Update an existing course by ID.
+9. /api/courses/:id (DELETE) - Delete a course by ID.
+10. /api/courses/:id/rate (POST) - Add a rating (out of 5) to a course.
+    
+#Sample API requests and responses:
 
-POST /api/courses: Create a new course ● Request: The course details in the request body
+1. GET /api/courses: Get all courses ● Response: A list of all courses in the database
+   
+2. GET /api/courses/:id: Get a single course by ID ● Response: The course with the specified ID
+   
+3. POST /api/courses: Create a new course ● Request: The course details in the request body
 
 ● Response: The newly created course
 
-PUT /api/courses/:id: Update an existing course by ID ● Request: The updated course details in the request body
+4. PUT /api/courses/:id: Update an existing course by ID ● Request: The updated course details in the request body
+   
 ● Response: The updated course
 
-DELETE /api/courses/:id: Delete a course by ID ● Response: A success message indicating that the course has been deleted.
+5. DELETE /api/courses/:id: Delete a course by ID ● Response: A success message indicating that the course has been deleted.
+   
 In conclusion, the REST API design for the StudyNotion ed-tech platform is a crucial part of the project. The API endpoints and their functionalities are designed to ensure seamless communication between the front-end and back-end of the application. By following RESTful principles, the API will be scalable, maintainable, and reliable. The sample API requests and responses provided above illustrate how each endpoint will function and what kind of data it will accept or return. With this API design, StudyNotion will be able to provide a smooth user experience while ensuring security and stability.
 
  # Deployment
@@ -150,12 +157,13 @@ Overall, the deployment process for StudyNotion will ensure a stable and scalabl
 
 This section discusses potential future improvements to the StudyNotion platform. These enhancements are listed along with an explanation of how they would improve the platform and priority for implementation.
 
-Gamification features: Adding gamification features such as badges, points, and leaderboards can increase user engagement and motivation. This would be a medium-priority enhancement.
-Personalized learning paths: Creating personalized learning paths for each student based on their interests and learning style can increase student satisfaction and success. This would be a high-priority enhancement.
-Social learning features: Adding social learning features such as group discussions, peer-to-peer feedback, and collaborative projects can increase student engagement and interaction. This would be a medium-priority enhancement.
-Mobile app: Creating a mobile app for the platform would allow for more convenient access to course content and features, and would increase the platform's reach. This would be a high-priority enhancement.
-Machine learning-powered recommendations: Using machine learning algorithms to provide personalized course recommendations can improve student engagement and satisfaction. This would be a medium to high-priority enhancement.
-Virtual reality/augmented reality integration: Adding virtual reality or augmented reality components to certain courses can enhance the learning experience and make it more immersive. This would be low to medium-priority enhancement.
+- Gamification features: Adding gamification features such as badges, points, and leaderboards can increase user engagement and motivation. This would be a medium-priority enhancement.
+- Personalized learning paths: Creating personalized learning paths for each student based on their interests and learning style can increase student satisfaction and success. This would be a high-priority enhancement.
+- Social learning features: Adding social learning features such as group discussions, peer-to-peer feedback, and collaborative projects can increase student engagement and interaction. This would be a medium-priority enhancement.
+- Mobile app: Creating a mobile app for the platform would allow for more convenient access to course content and features, and would increase the platform's reach. This would be a high-priority enhancement.
+- Machine learning-powered recommendations: Using machine learning algorithms to provide personalized course recommendations can improve student engagement and satisfaction. This would be a medium to high-priority enhancement.
+- Virtual reality/augmented reality integration: Adding virtual reality or augmented reality components to certain courses can enhance the learning experience and make it more immersive. This would be low to medium-priority enhancement.
+  
 Overall, these enhancements would significantly improve the StudyNotion platform and its offerings to students, instructors, and administrators. The implementation timeline and priority would depend on various factors such as the resources available and the specific needs and goals of the platform.
 
 # Conclusion
