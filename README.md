@@ -163,6 +163,10 @@ In conclusion, this document outlines the architecture, features, and functional
 Throughout the development of the project, various achievements will be made in terms of implementing the desired functionalities and creating a user-friendly interface. However, there will be challenges to be faced during the development process, such as integrating different technologies and debugging errors.
 
 
+- so there is 
+- a solid 
+
+
 
 
 
