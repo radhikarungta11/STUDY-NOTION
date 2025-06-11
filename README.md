@@ -55,15 +55,16 @@ User Edit Details: This page will allow the student to edit their account detail
 
 # For Instructors:
 
-'-Dashboard: This page will have an overview of the instructor's courses, as well as the ratings and feedback for each course.
+-Dashboard: This page will have an overview of the instructor's courses, as well as the ratings and feedback for each course.
 
-Insights: This page will have detailed insights into the instructor's courses, including the number of views, clicks, and other relevant metrics.
-Course Management Pages: These pages will allow the instructor to create, update, and delete courses, as well as manage the course content and pricing.
-View and Edit Profile Details: These pages will allow the instructor to view and edit their account details. For Admin (this is for future scope):
-Dashboard: This page will have an overview of the platform's courses, instructors, and students.
-Insights: This page will have detailed insights into the platform's metrics, including the number of registered users, courses, and revenue.
-Instructor Management: This page will allow the admin to manage the platform's instructors, including their account details, courses, and ratings.
-Other Relevant Pages: The admin will also have access to other relevant pages, such as user management and course management pages.
+-Insights: This page will have detailed insights into the instructor's courses, including the number of views, clicks, and other relevant metrics.
+-Course Management Pages: These pages will allow the instructor to create, update, and delete courses, as well as manage the course content and pricing.
+-View and Edit Profile Details: These pages will allow the instructor to view and edit their account details. For Admin (this is for future scope):
+-Dashboard: This page will have an overview of the platform's courses, instructors, and students.
+-Insights: This page will have detailed insights into the platform's metrics, including the number of registered users, courses, and revenue.
+-Instructor Management: This page will allow the admin to manage the platform's instructors, including their account details, courses, and ratings.
+-Other Relevant Pages: The admin will also have access to other relevant pages, such as user management and course management pages.
+
 To build the front end, we use frameworks and libraries such as ReactJS, which is a popular JavaScript library for building user interfaces. We also use CSS and Tailwind, which are styling frameworks that help make the user interface look good and responsive. Additionally, we use some npm packages to add extra functionality to the front end. To manage the state of the application, we use Redux, which is a popular state management library for React. Finally, we use a development environment called VSCode, which is a popular code editor, to develop the front end.
 
 # Back-end
