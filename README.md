@@ -2,10 +2,10 @@
 
 StudyNotion is a fully functional ed-tech platform that enables users to create, consume, and rate educational content. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, and ExpressJS.
 
-![273155333-552f6183-d889-46c2-b55d-de10822205e6](https://github.com/user-attachments/assets/db42fd09-04ac-4f6f-b6c4-1ccc929d725c)
-<img width="1920" height="993" alt="255956903-62c33b56-0bd5-4330-b1db-d41b80d9f69f" src="https://github.com/user-attachments/assets/0e67c7ef-78c4-4e7f-852e-2908f9555c25" />
-<img width="1920" height="693" alt="255957153-63f7163d-a74a-4e78-bc78-6b96b06073f9" src="https://github.com/user-attachments/assets/b650f924-9d7a-4bea-8cac-0daa8ab70dbd" />
-<img width="1920" height="990" alt="255957572-59d1d8c2-2824-45bb-a2f7-6f5dc234895c" src="https://github.com/user-attachments/assets/7293a3f2-d8e9-4acd-8717-1cd526c53668" />
+![273155333-552f6183-d889-46c2-b55d-de10822205e6](https://github.com/user-attachments/assets/db42fd09-04ac-4f6f-b6c4-1ccc929d725c)<br>
+<img width="1920" height="993" alt="255956903-62c33b56-0bd5-4330-b1db-d41b80d9f69f" src="https://github.com/user-attachments/assets/0e67c7ef-78c4-4e7f-852e-2908f9555c25" /><br>
+<img width="1920" height="693" alt="255957153-63f7163d-a74a-4e78-bc78-6b96b06073f9" src="https://github.com/user-attachments/assets/b650f924-9d7a-4bea-8cac-0daa8ab70dbd" /> <br>
+<img width="1920" height="990" alt="255957572-59d1d8c2-2824-45bb-a2f7-6f5dc234895c" src="https://github.com/user-attachments/assets/7293a3f2-d8e9-4acd-8717-1cd526c53668" /><br>
 
 
 
